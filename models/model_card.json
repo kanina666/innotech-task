@@ -1,0 +1,50 @@
+{
+  "best_model": "gboost",
+  "calibration": "isotonic",
+  "threshold_precision_099": 0.9692307692307691,
+  "threshold_max_f1": 0.6966666666666667,
+  "feature_names": [
+    "fio_token_set",
+    "fio_token_sort",
+    "fio_jaro_winkler",
+    "fio_levenshtein",
+    "fio_overlap",
+    "fio_containment",
+    "email_exact",
+    "login_match",
+    "manager_match",
+    "len_ratio"
+  ],
+  "metrics_test": {
+    "logreg": {
+      "roc_auc": 0.9539725323324807,
+      "pr_auc": 0.9019786076882446,
+      "precision@0.5": 0.8565022421524664,
+      "recall@0.5": 0.809322033898305,
+      "f1@0.5": 0.8322440087145969
+    },
+    "gboost": {
+      "roc_auc": 0.9963394372594487,
+      "pr_auc": 0.9884690701401893,
+      "precision@0.5": 0.957983193277311,
+      "recall@0.5": 0.9661016949152542,
+      "f1@0.5": 0.9620253164556962
+    }
+  },
+  "permutation_importance": {
+    "fio_token_set": 0.014611506509314554,
+    "fio_token_sort": 0.039573525917083525,
+    "fio_jaro_winkler": 0.01367585084148491,
+    "fio_levenshtein": -0.0008641826285827991,
+    "fio_overlap": -0.0003781938070398172,
+    "fio_containment": 0.00014394625736526278,
+    "email_exact": 0.007472681807632003,
+    "login_match": 0.02313733967055891,
+    "manager_match": 0.3542073440810828,
+    "len_ratio": 0.0011225179204926328
+  },
+  "dataset": {
+    "n_emp": 400,
+    "neg_per_pos": 3
+  }
+}
